@@ -1,0 +1,132 @@
+// reset
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    // vertical-align: baseline;
+    box-sizing: border-box;
+    color: #141414;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Jura", sans-serif;
+}
+
+a {
+    font-size: 2rem;
+
+    &:hover {
+        color: #FF5D2A;
+    }
+}
+
+// header
+
+.head {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 10px 80px;
+    background: #FFFFFF;
+    position: relative;
+
+    &_subtitle {
+        font-size: 2rem;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+
+    &_title {
+        width: 50%;
+        max-width: 1072px;
+        margin-top: 60px;
+        font-weight: 700;
+        font-size: 5em;
+        line-height: 1;
+
+    }
+
+    &_text {
+        margin-top: 60px;
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+
+        &_logo {
+            display: block;
+            align-self: center;
+            width: 300px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &_menu {
+            display: flex;
+            gap: 40px;
+            z-index: 2;
+        }
+    }
+
+    &_img {
+        width: 45%;
+        position: absolute;
+        z-index: 1;
+        right: -10px;
+        top: 0;
+    }
+
+    &_circle {
+        position: absolute;
+        width: 30%;
+        aspect-ratio: 16 / 16;
+        border-radius: 50%;
+        background: #FF5D2A;
+        top: 160px;
+        right: 120px;
+        filter: blur(100px);
+    }
+
+
+
+    &_services {
+        margin-top: 40px;
+        margin-left: 80px;
+        padding: 50px 0 50px 80px;
+        width: 65%;
+        position: relative;
+
+        &_text {
+            font-size: 2em;
+            text-align: left;
+
+        }
+    }
+
+    .mini {
+        width: 154px;
+        height: 154px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        filter: blur(40px);
+    }
+}

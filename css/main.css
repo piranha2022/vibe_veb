@@ -1,0 +1,110 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #141414;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Jura", sans-serif;
+}
+
+a {
+  font-size: 2rem;
+}
+a:hover {
+  color: #FF5D2A;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 10px 80px;
+  background: #FFFFFF;
+  position: relative;
+}
+.head_subtitle {
+  font-size: 2rem;
+  margin-top: 80px;
+  margin-left: 10px;
+}
+.head_title {
+  width: 50%;
+  max-width: 1072px;
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 5em;
+  line-height: 1;
+}
+.head_text {
+  margin-top: 60px;
+  font-size: 2rem;
+  width: 60%;
+}
+.head .nav {
+  display: flex;
+  justify-content: space-between;
+}
+.head .nav_logo {
+  display: block;
+  align-self: center;
+  width: 300px;
+  overflow: hidden;
+}
+.head .nav_logo img {
+  width: 100%;
+}
+.head .nav_menu {
+  display: flex;
+  gap: 40px;
+  z-index: 2;
+}
+.head_img {
+  width: 45%;
+  position: absolute;
+  z-index: 1;
+  right: -10px;
+  top: 0;
+}
+.head_circle {
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 16/16;
+  border-radius: 50%;
+  background: #FF5D2A;
+  top: 160px;
+  right: 120px;
+  filter: blur(100px);
+}
+.head_services {
+  margin-top: 40px;
+  margin-left: 80px;
+  padding: 50px 0 50px 80px;
+  width: 65%;
+  position: relative;
+}
+.head_services_text {
+  font-size: 2em;
+  text-align: left;
+}
+.head .mini {
+  width: 154px;
+  height: 154px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: blur(40px);
+}/*# sourceMappingURL=main.css.map */
