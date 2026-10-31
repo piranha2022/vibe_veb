@@ -8,10 +8,11 @@
   list-style: none;
   text-decoration: none;
   font-family: "Jura", sans-serif;
+  font-size: 16px;
 }
 
 a {
-  font-size: 2rem;
+  font-size: 2em;
 }
 a:hover {
   color: #FF5D2A;
@@ -24,7 +25,7 @@ a:hover {
 .nav_logo {
   display: block;
   align-self: center;
-  width: 300px;
+  width: 18.75em;
   overflow: hidden;
   z-index: 2;
 }
@@ -121,6 +122,10 @@ a:hover {
   filter: blur(50px);
 }
 
+.head {
+  padding-bottom: 100px;
+}
+
 .about {
   max-width: 1920px;
   margin: 0 auto;
@@ -213,6 +218,7 @@ a:hover {
   font-size: 64px;
   font-weight: 700;
   line-height: 0.9;
+  margin-bottom: 70px;
 }
 .services .services_block_text_title:first-child {
   color: #FF5D2A;
@@ -246,7 +252,6 @@ a:hover {
   max-width: 1920px;
   margin: 0 auto;
   display: flex;
-  padding: 100px 80px;
   flex-direction: column;
   position: relative;
 }
@@ -278,6 +283,7 @@ a:hover {
 }
 .about_us_img {
   position: absolute;
+  width: 700px;
   top: 50px;
   right: 50px;
   opacity: 0.6;
@@ -289,7 +295,7 @@ a:hover {
 
 .work {
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 .work_title {
   font-size: 64px;

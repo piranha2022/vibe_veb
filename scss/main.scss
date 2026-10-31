@@ -9,11 +9,12 @@
     list-style: none;
     text-decoration: none;
     font-family: "Jura", sans-serif;
+    font-size: 16px;
 }
 
 
 a {
-    font-size: 2rem;
+    font-size: 2em;
 
     &:hover {
         color: #FF5D2A;
@@ -28,7 +29,7 @@ a {
     &_logo {
         display: block;
         align-self: center;
-        width: 300px;
+        width: 18.75em;
         overflow: hidden;
         z-index: 2;
 
@@ -52,7 +53,6 @@ a {
     display: flex;
     flex-direction: column;
     max-width: 1920px;
-    // height: 100vh;
     min-height: 918px;
     margin: 0 auto;
     padding: 0 80px;
@@ -121,6 +121,10 @@ a {
             filter: blur(50px);
         }
     }
+}
+
+.head{
+    padding-bottom: 100px;
 }
 
 
@@ -194,6 +198,7 @@ a {
 
 .services {
     max-width: 1920px;
+
     h2 {
         margin-bottom: 20px;
     }
@@ -201,13 +206,13 @@ a {
     &_row {
         display: flex;
         justify-content: space-around;
-        // margin: 188px 231px 0 0;
         align-items: center;
     }
 
     .services_block_text {
         margin-right: 32px;
-width: 40%;
+        width: 40%;
+
         &_list {
             font-size: 32px;
 
@@ -238,6 +243,7 @@ width: 40%;
             font-size: 64px;
             font-weight: 700;
             line-height: 0.9;
+            margin-bottom: 70px;
 
 
             &:first-child {
@@ -285,7 +291,6 @@ width: 40%;
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
-    padding:100px 80px;
     flex-direction: column;
     position: relative;
 
@@ -323,6 +328,7 @@ width: 40%;
 
     &_img {
         position: absolute;
+        width: 700px;
         top: 50px;
         right: 50px;
         opacity: 0.6;
@@ -338,7 +344,7 @@ width: 40%;
 
 .work {
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 20px auto 0;
 
     &_title {
         font-size: 64px;
