@@ -3,19 +3,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box;
-  color: #141414;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Jura", sans-serif;
-  font-size: 16px;
-}
-
-a {
-  font-size: 2em;
-}
-a:hover {
-  color: #FF5D2A;
 }
 
 .nav {
@@ -25,7 +12,7 @@ a:hover {
 .nav_logo {
   display: block;
   align-self: center;
-  width: 18.75em;
+  width: 18.75rem;
   overflow: hidden;
   z-index: 2;
 }
@@ -34,7 +21,7 @@ a:hover {
 }
 .nav_menu {
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
   z-index: 2;
 }
 
@@ -64,7 +51,7 @@ a:hover {
   max-width: 1072px;
   margin-top: 60px;
   font-weight: 700;
-  font-size: 5em;
+  font-size: 5rem;
   line-height: 1;
 }
 .head_text,
@@ -107,7 +94,7 @@ a:hover {
 .head_services_text,
 .about_services_text,
 .services_services_text {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 700;
   text-align: left;
 }
@@ -132,7 +119,7 @@ a:hover {
 }
 .about h2 {
   width: 70%;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
   margin-top: 40px;
 }
@@ -163,7 +150,7 @@ a:hover {
 .about_card a {
   display: inline-block;
   margin-top: 20px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 .about_card_title {
@@ -177,6 +164,50 @@ a:hover {
 }
 .about .indent {
   margin-left: 200px;
+}
+
+.about_us {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.about_us_titles {
+  padding: 30px;
+  width: 50%;
+}
+.about_us_title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 0.9;
+}
+.about_us_text {
+  background: #F6F6F6;
+  text-indent: 40px;
+  padding: 30px;
+}
+.about_us a {
+  color: #FF5D2A;
+}
+.about_us a:hover {
+  color: #141414;
+}
+.about_us p {
+  font-size: 1.875rem;
+  text-indent: 40px;
+}
+.about_us_img {
+  position: absolute;
+  width: 700px;
+  top: 50px;
+  right: 50px;
+  opacity: 0.6;
+}
+
+.text {
+  margin-bottom: 30px;
 }
 
 .services {
@@ -195,11 +226,12 @@ a:hover {
   width: 40%;
 }
 .services .services_block_text_list {
-  font-size: 32px;
+  font-size: 2rem;
 }
 .services .services_block_text_list li {
   margin-bottom: 10px;
   position: relative;
+  font-size: 1.875rem;
 }
 .services .services_block_text_list li::after {
   content: "";
@@ -212,10 +244,10 @@ a:hover {
   border-radius: 50%;
 }
 .services .services_block_text p {
-  font-size: 32px;
+  font-size: 2rem;
 }
 .services .services_block_text_title {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 0.9;
   margin-bottom: 70px;
@@ -248,57 +280,12 @@ a:hover {
   width: 100%;
 }
 
-.about_us {
-  max-width: 1920px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.about_us_titles {
-  padding: 30px;
-  width: 50%;
-}
-.about_us_title {
-  text-align: center;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 0.9;
-}
-.about_us_text {
-  background: #F6F6F6;
-  height: 661px;
-  text-indent: 40px;
-  padding: 30px;
-}
-.about_us a {
-  color: #FF5D2A;
-}
-.about_us a:hover {
-  color: #141414;
-}
-.about_us p {
-  font-size: 32px;
-  text-indent: 40px;
-}
-.about_us_img {
-  position: absolute;
-  width: 700px;
-  top: 50px;
-  right: 50px;
-  opacity: 0.6;
-}
-
-.text {
-  margin-bottom: 30px;
-}
-
 .work {
   max-width: 1920px;
   margin: 20px auto 0;
 }
 .work_title {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 0.9;
   color: #FF5D2A;
@@ -333,11 +320,11 @@ a:hover {
 }
 .work_row_card_img h3 {
   color: #FFFFFF;
-  font-size: 30px;
+  font-size: 1.875rem;
   text-align: center;
 }
 .work_row_card p {
-  font-size: 24px;
+  font-size: 1.5rem;
   padding: 10px;
 }
 .work_row_card {
@@ -378,7 +365,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .questions_title {
-  font-size: 64px;
+  font-size: 4rem;
   text-align: center;
 }
 .questions_img {
@@ -398,7 +385,7 @@ a:hover {
   cursor: pointer;
   list-style: none;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   color: #333;
   background: #fafafa;
   transition: background 0.2s;
@@ -416,7 +403,7 @@ a:hover {
 .accordion-summary::after {
   content: "+";
   float: right;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 1;
   color: #666;
   transition: transform 0.3s ease;
@@ -429,7 +416,7 @@ details[open] .accordion-summary::after {
 }
 
 .accordion-content {
-  font-size: 32px;
+  font-size: 2rem;
   padding: 16px;
   color: #555;
   line-height: 1.5;
@@ -451,17 +438,17 @@ details[open] .accordion-summary::after {
   width: 50%;
 }
 .footer_contact_tel {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   color: #FF5D2A;
   margin-bottom: 40px;
 }
 .footer_contact_mail {
-  font-size: 38px;
+  font-size: 2.375rem;
   color: #FFFFFF;
 }
 .footer_contact p {
-  font-size: 38px;
+  font-size: 2.375rem;
   line-height: 0.9;
   color: #FFFFFF;
   margin-bottom: 40px;
@@ -473,7 +460,7 @@ details[open] .accordion-summary::after {
   width: 50%;
 }
 .footer_form_title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 0.9;
   color: #FF5D2A;
@@ -486,7 +473,7 @@ details[open] .accordion-summary::after {
   margin: 0 auto;
 }
 .footer_title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 0.9;
   color: #FF5D2A;
@@ -503,7 +490,7 @@ details[open] .accordion-summary::after {
   height: 54px;
   padding: 10px;
   outline: none;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .footer .form .textarea {
   min-height: 120px;
@@ -511,13 +498,13 @@ details[open] .accordion-summary::after {
   resize: none;
   border-radius: 0;
   color: #141414;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .footer .form_btn {
   padding: 20px;
   border-radius: 8px;
   background: #FF5D2A;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.8s;
@@ -525,4 +512,20 @@ details[open] .accordion-summary::after {
 }
 .footer .form_btn:hover {
   transform: scale(1.06);
+}
+
+* {
+  box-sizing: border-box;
+  color: #141414;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  font-size: 2em;
+}
+a:hover {
+  color: #FF5D2A;
 }/*# sourceMappingURL=main.css.map */

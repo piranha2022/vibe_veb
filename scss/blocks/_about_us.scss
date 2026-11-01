@@ -1,0 +1,52 @@
+// О нас
+
+.about_us {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &_titles {
+        padding: 30px;
+        width: 50%;
+    }
+
+    &_title {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 0.9;
+    }
+
+    &_text {
+        background: #F6F6F6;
+        text-indent: 40px;
+        padding: 30px;
+    }
+
+    a {
+        color: #FF5D2A;
+
+        &:hover {
+            color: #141414;
+        }
+    }
+
+    p {
+        font-size: 1.875rem;
+        text-indent: 40px;
+    }
+
+    &_img {
+        position: absolute;
+        width: 700px;
+        top: 50px;
+        right: 50px;
+        opacity: 0.6;
+    }
+}
+
+.text {
+    margin-bottom: 30px;
+}

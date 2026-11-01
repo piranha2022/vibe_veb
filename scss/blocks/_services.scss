@@ -1,0 +1,91 @@
+// Почему с нами комфортно
+
+.services {
+    max-width: 1920px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    &_row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .services_block_text {
+        margin-right: 32px;
+        width: 40%;
+
+        &_list {
+            font-size: 2rem;
+
+            li {
+                margin-bottom: 10px;
+                position: relative;
+                font-size: 1.875rem;
+
+                &::after {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    background-color: #FF5D2A;
+                    position: absolute;
+                    top: 10px;
+                    left: -50px;
+                    border-radius: 50%;
+
+                }
+            }
+
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+        &_title {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 0.9;
+            margin-bottom: 70px;
+
+
+            &:first-child {
+                color: #FF5D2A;
+            }
+
+            &:nth-child(2) {
+                display: inline-block;
+                text-align: right;
+                width: 500px;
+                margin-bottom: 72px;
+            }
+        }
+    }
+
+    &_img {
+        width: 600px;
+        height: 400px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            z-index: -3;
+            top: -48px;
+            right: 48px;
+            background: linear-gradient(136deg,
+                    transparent 50px,
+                    #FF5D2A 20px);
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+}

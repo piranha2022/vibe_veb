@@ -1,0 +1,65 @@
+// Что мы делаем
+
+.about {
+    max-width: 1920px;
+    margin: 0 auto;
+
+    h2 {
+        width: 70%;
+        font-size: 4rem;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+
+    &_row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &_card {
+        width: 400px;
+        padding: 10px;
+        margin: 20px auto;
+
+        a {
+            color: #FF5D2A;
+
+            &:hover {
+                color: #141414;
+            }
+        }
+
+        &_text li {
+            font-size: 1.5rem;
+            width: 100%;
+            font-weight: normal;
+        }
+
+        &_text {
+            margin-top: 1rem;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+    }
+
+    &_card_title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    span {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: 0;
+    }
+
+    .indent {
+        margin-left: 200px;
+    }
+}

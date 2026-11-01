@@ -1,0 +1,75 @@
+// Отвечаем на вопросы
+
+.questions {
+    max-width: 1920px;
+    margin: 50px auto;
+
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &_title {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    &_img {
+        width: 200px;
+        border-radius: 50%;
+    }
+}
+
+// аккордеон (выпадающий текст)
+
+.accordion-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.accordion-summary {
+    padding: 16px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #333;
+    background: #fafafa;
+    transition: background 0.2s;
+}
+
+.accordion-summary:hover {
+    background: #f5f5f5;
+}
+
+.accordion-summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Своя стрелочка через псевдоэлемент (треугольник) */
+.accordion-summary::after {
+    content: '+';
+    float: right;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+/* Когда открыто — стрелочка поворачивается */
+details[open] .accordion-summary::after {
+    transform: rotate(45deg);
+    /* из «+» делаем «×» */
+}
+
+.accordion-content {
+    font-size: 2rem;
+    padding: 16px;
+    color: #555;
+    line-height: 1.5;
+}

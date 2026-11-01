@@ -1,0 +1,108 @@
+// подвал
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    align-items: center;
+    padding: 100px 80px;
+    background: #141414;
+    text-align: center;
+    margin: 50px auto;
+
+    &_contact {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        &_tel {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #FF5D2A;
+            margin-bottom: 40px;
+        }
+
+        &_mail {
+            font-size: 2.375rem;
+            color: #FFFFFF;
+        }
+
+        p {
+            font-size: 2.375rem;
+            line-height: 0.9;
+            color: #FFFFFF;
+            margin-bottom: 40px;
+        }
+
+        &_social {
+            padding: 20px;
+        }
+
+    }
+
+    &_form {
+        width: 50%;
+
+        &_title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 0.9;
+            color: #FF5D2A;
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            font-size: 1.2rem;
+            color: #ffffff;
+            width: 603px;
+            margin: 0 auto;
+        }
+    }
+
+    &_title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 0.9;
+        color: #FF5D2A;
+        margin-bottom: 50px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 603px;
+        margin: 20px auto 0;
+
+        input {
+            margin-bottom: 40px;
+            height: 54px;
+            padding: 10px;
+            outline: none;
+            font-size: 1.5rem;
+        }
+
+        .textarea {
+            min-height: 120px;
+            padding: 16px;
+            resize: none;
+            border-radius: 0;
+            color: #141414;
+            font-size: 1.5rem;
+        }
+
+        &_btn {
+            padding: 20px;
+            border-radius: 8px;
+            background: #FF5D2A;
+            font-size: 2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.8s;
+            margin: 40px auto 20px;
+
+            &:hover {
+                transform: scale(1.06);
+            }
+        }
+    }
+}
