@@ -1,0 +1,48 @@
+.events {
+    margin: 20px auto;
+}
+
+.events_row {
+    display: flex;
+    max-width: 1920px;
+    height: 544px;
+}
+
+.events_text {
+    text-align: start;
+    width: 700px;
+    font-size: 2rem;
+    margin: auto;
+    margin-left: 100px;
+    flex: 50%;
+
+    p {
+        font-size: 2rem;
+    }
+}
+
+.events_text_title {
+    color: #FF5D2A;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.events_img {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.end_text {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 40px;
+
+    span{
+    font-size: 2rem;
+        margin-left: 300px;
+    }
+}

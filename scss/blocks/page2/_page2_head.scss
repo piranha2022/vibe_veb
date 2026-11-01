@@ -1,0 +1,27 @@
+.page2_head {
+    background: rgb(255 223 212);
+    padding: 50px 80px;
+    height: 900px;
+
+    &_title{
+        display: flex;
+        align-items: center;
+        img{
+            width: 60px;
+            margin-left: 28px;
+        }
+    }
+}
+
+.title2 {
+    margin-bottom: 80px;
+
+
+    span {
+        color: #FF5D2A;
+        margin-top: 60px;
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 1;
+    }
+}

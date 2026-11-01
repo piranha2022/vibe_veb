@@ -1,0 +1,39 @@
+.which_will_suit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    background: url(../img/unsplash.png) no-repeat center/cover;
+
+
+    .internal {
+        margin: 0 auto;
+        padding: 60px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #FFFFFF;
+        margin: 0 40px 40px;
+    }
+
+    li {
+        color: #FFFFFF;
+        font-size: 2rem;
+        width: 1300px;
+        position: relative;
+        margin: 0 40px 40px;
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 10px;
+            left: -50px;
+            border-radius: 50%;
+        }
+    }
+}

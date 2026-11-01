@@ -1,11 +1,22 @@
+// файл reset
 @import './base/reset';
-@import './blocks/head';
-@import './blocks/about';
-@import './blocks/about_us';
-@import './blocks/services';
-@import './blocks/work';
-@import './blocks/questions';
+
+// Главная страница
+@import './blocks/main/head';
+@import './blocks/main/about';
+@import './blocks/main/about_us';
+@import './blocks/main/services';
+@import './blocks/main/work';
+@import './blocks/main/questions';
+
+// Вторая страница
+@import './blocks/page2/page2_head';
+@import './blocks/page2/which_will_suit';
+@import './blocks/page2/events';
+
+// Один footer для всех страниц
 @import './blocks/footer';
+
 
 * {
     box-sizing: border-box;
@@ -17,11 +28,15 @@
     font-size: 16px;
 }
 
-
 a {
     font-size: 2em;
 
     &:hover {
         color: #FF5D2A;
     }
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
 }
