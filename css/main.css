@@ -670,6 +670,10 @@ details[open] .accordion-summary::after {
   color: #ffffff;
 }
 
+.analis img {
+  border-radius: 60px 0 60px 0;
+}
+
 .head-page4 {
   background: url(../img/notebook.jpeg) center/cover no-repeat;
 }
