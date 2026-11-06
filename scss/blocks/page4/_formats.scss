@@ -1,0 +1,88 @@
+.formats {
+    padding: 50px;
+}
+
+.span {}
+
+.formats_row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.formats_block {
+    width: 450px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px rgb(242, 152, 124);
+    margin: 20px auto;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.8s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    ul{
+        margin-left: 30px;
+    }
+
+    li{
+        font-size: 1.5rem;
+        list-style-type:disc;
+    }
+}
+
+
+.formats_block_header {
+    height: 200px;
+    background: url(../img/formats.png) center/cover no-repeat;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        /* то же, что top/right/bottom/left: 0 */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* чёрный с прозрачностью 50% */
+        z-index: 1;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.formats_block_title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.price {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+        z-index: 2;
+}
+
+.black {
+    background: url(../../../img/formats1.jpeg) center/cover no-repeat;
+}
+
+.orange {
+        background: url(../img/formats3.png) center/cover no-repeat;
+}
+
+.formats_text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}

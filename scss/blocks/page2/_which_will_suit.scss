@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1920px;
     height: 900px;
     background: url(../img/unsplash.png) no-repeat center/cover;
 
@@ -21,7 +22,7 @@
     li {
         color: #FFFFFF;
         font-size: 2rem;
-        width: 1300px;
+        max-width: 1300px;
         position: relative;
         margin: 0 40px 40px;
 

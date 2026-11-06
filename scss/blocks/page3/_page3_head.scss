@@ -1,0 +1,57 @@
+._page3 {
+    position: relative;
+    max-width: 1920px;
+    height: 900px;
+    background: #000;
+}
+
+.black_orange{
+    color: #ffffff;
+}
+
+.black_anf_white {
+    color: #fff;
+    font-size: 5rem;
+}
+
+.mars_big {
+    width: 290px;
+    position: absolute;
+    top: 500px;
+    right: 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+.mars_big2 {
+    width: 108px;
+    position: absolute;
+    top: 550px;
+    left: 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+.mars_smole {
+    width: 120px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.btn_page3 {
+    margin-left: 100px;
+    margin-top: 180px;
+
+    a {
+        color: #ffffff;
+    }
+}

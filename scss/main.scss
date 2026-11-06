@@ -14,9 +14,20 @@
 @import './blocks/page2/which_will_suit';
 @import './blocks/page2/events';
 
-// Один footer для всех страниц
-@import './blocks/footer';
+// Третья страница
+@import './blocks/page3/page3_head';
+@import './blocks/page3/seo';
+@import './blocks/page3/page3_head';
+@import './blocks/page3/includit';
 
+// Четвертая страница
+@import 'blocks/page4/_head-page4.scss';
+@import 'blocks/page4/service';
+@import 'blocks/page4/_head-page4.scss';
+@import 'blocks/page4/formats';
+
+// Футер и модальное окно
+@import './blocks/footer';
 
 * {
     box-sizing: border-box;
@@ -39,4 +50,17 @@ a {
 .container {
     max-width: 1920px;
     margin: 0 auto;
+}
+
+.span {
+    color: #FF5D2A;
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.now_page {
+    color: #FF5D2A;
+    font-weight: 700;
 }

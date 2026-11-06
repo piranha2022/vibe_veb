@@ -1,0 +1,44 @@
+.service {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.service_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+
+    p {
+        font-size: 2rem;
+        text-indent: 30px;
+    }
+
+    li {
+        margin-top: 5px;
+        font-size: 2rem;
+    }
+
+    &_span {
+        font-size: inherit;
+        font-weight: 700;
+        color: #FF5D2A;
+    }
+}
+
+.service_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service_img {
+    width: 600px;
+    align-self: center;
+
+    img{
+        width: 100%;
+    }
+}

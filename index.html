@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="img/png." href="img/orang.png">
     <meta name="description"
         content="Веб-студия ВайбВеб: разрабатываем сайты, настраиваем продвижение и берём на себя техническую поддержку. Современный дизайн, понятные сроки, заявки от клиентов.">
     <title>ВайбВеб — создание, продвижение и поддержка сайтов под ключ</title>
@@ -19,9 +20,10 @@
         <nav class="nav">
             <a class="nav_logo" href="#"><img src="img/logo-1.png" alt=""></a>
             <ul class="nav_menu">
-                <li><a href="page2.html">Услуги и цены</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a class="now_page" href="#">Главная</a></li>
+                <li><a href="page2.html">Создание сайтов</a></li>
+                <li><a href="page3.html">Продвижение</a></li>
+                <li><a href="page4.html">Обслуживание</a></li>
             </ul>
         </nav>
         <h3 class="head_subtitle">Привет! Мы веб студия "Веб Вайб". г. Орел</h3>
@@ -30,7 +32,7 @@
             бизнесом, мы занимаемся
             сайтом.</p>
         <div class="head_services">
-            <a class="head_services_text" href="#">Обсудить проект</a>
+            <a class="head_services_text" href="#" id="open-modal-btn">Обсудить проект</a>
             <div class="head_circle mini"></div>
         </div>
         <img src="./img/rocket.png" alt="rocket" class="head_img">
@@ -297,21 +299,22 @@
                 уточняющих вопросов и
                 предложим, с чего
                 лучше начать. Это бесплатно и ни к чему не обязывает.</p>
-            <form class="form" action="">
-                <input type="text" placeholder="Ваше имя">
+            <form class="form" id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
                 <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00" required inputmode="numeric">
-                <textarea class="textarea" name="text" placeholder="Коротко о задаче (необязательно)" ></textarea>
-                <button class="form_btn">Отправить заявку</button>
+                <textarea class="textarea" id="text" name="text"
+                    placeholder="Коротко о задаче (необязательно)"></textarea>
+                <button type="submit" id="form_btn" class="form_btn">Отправить заявку</button>
                 <p style="font-size: 18px; color: #ffffff;">Заполняя форму, вы соглашаетесь на обработку <br><span
                         style="color: #FF5D2A;">персональных данных</span>
                     (ст.9 ФЗ от 27.07.2006 №152- <br>
                     ФЗ «О персональных данных»)</p>
             </form>
-        </div>
 
-        </p>
+        </div>
     </footer>
 
+    <script src="main.js"></script>
 </body>
 
 </html>

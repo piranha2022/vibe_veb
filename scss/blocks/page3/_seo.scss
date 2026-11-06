@@ -1,0 +1,43 @@
+.seo {
+    height: 900px;
+    padding: 50px;
+}
+
+.about_title {
+    margin-bottom: 40px;
+}
+
+.seo_title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.seo_text {
+    font-size: 2rem;
+}
+
+.includit {
+    background: #000000;
+    &_row{
+        display: flex;
+        gap: 150px;
+    }
+
+    h3{
+        margin-left: 50px;
+    }
+
+ul{
+    padding: 50px;
+}    height: 900px;
+    padding: 20px;
+}
+
+.title3 {}
+
+.includit_list li {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
