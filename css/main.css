@@ -112,6 +112,18 @@
   padding-bottom: 100px;
 }
 
+.arrow_up {
+  display: block;
+  position: fixed;
+  top: 100px;
+  right: 40px;
+  z-index: 1006;
+  filter: opacity(0.5);
+}
+.arrow_up img {
+  width: 150px;
+}
+
 .about {
   max-width: 1920px;
   margin: 0 auto;
@@ -682,7 +694,7 @@ details[open] .accordion-summary::after {
 }
 
 .seo {
-  height: 900px;
+  min-height: 900px;
   padding: 50px;
 }
 

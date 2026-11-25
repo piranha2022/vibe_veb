@@ -53,7 +53,7 @@
         margin-top: 60px;
         font-size: 2rem;
         width: 60%;
-    cursor: pointer;
+        cursor: pointer;
     }
 
     &_img {
@@ -100,4 +100,16 @@
 
 .head {
     padding-bottom: 100px;
+}
+
+.arrow_up {
+    display: block;
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    z-index: 1006;
+    filter: opacity(0.5);
+    img{
+        width: 150px;
+    }
 }
