@@ -34,6 +34,7 @@
     padding: 50px 50px 80px;
     background: #FFFFFF;
     position: relative;
+    cursor: pointer;
 
     &_subtitle {
         font-size: 2rem;
@@ -52,6 +53,7 @@
         margin-top: 60px;
         font-size: 2rem;
         width: 60%;
+    cursor: pointer;
     }
 
     &_img {

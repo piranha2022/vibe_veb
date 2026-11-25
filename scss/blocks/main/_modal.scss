@@ -1,0 +1,124 @@
+// модальное окно
+
+.modal_window {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 53, 53, 0.5);
+
+    z-index: 1000;
+
+
+    .close-btn {
+        color: #FF5D2A;
+        font-size: 100px;
+        margin: 50px;
+        cursor: pointer;
+    }
+
+    .modal {
+        display: none;
+        /* Скрываем по умолчанию */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        z-index: 1001;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        width: 60%;
+        max-width: 1600px;
+        align-items: center;
+        padding: 50px 50px;
+        background: #141414;
+        text-align: center;
+
+        &_form {
+            width: 100%;
+
+            &_title {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 0.9;
+                color: #FF5D2A;
+                margin-bottom: 5px;
+            }
+
+            &_text {
+                font-size: 1rem;
+        color: #ffffff;
+                // max-width: 1500px;
+                margin: 0 auto;
+            }
+        }
+
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            // max-width: 1500px;
+            margin: 5px auto 0;
+
+            input {
+                margin-bottom: 40px;
+                height: 54px;
+                padding: 10px;
+                outline: none;
+                font-size: 2rem;
+            }
+
+            .textarea {
+                min-height: 120px;
+                padding: 16px;
+                resize: none;
+                border-radius: 0;
+                color: #141414;
+                font-size: 1rem;
+            }
+
+            &_btn {
+                padding: 20px;
+                border-radius: 8px;
+                background: #FF5D2A;
+                font-size: 2rem;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.8s;
+                margin: 30px auto 10px;
+
+                &:hover {
+                    transform: scale(1.06);
+                }
+            }
+        }
+
+        &_contact {
+            display: flex;
+            flex-direction: column;
+
+            &_tel {
+                font-size: 2rem;
+                font-weight: 700;
+                color: #FF5D2A;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                transition: all 0.8s;
+
+                &:hover {
+                    transform: scale(1.06);
+                }
+            }
+        }
+    }
+
+           &.modal--opened {
+               display: block;
+           }
+}
+

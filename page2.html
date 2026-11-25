@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="img/png." href="img/orang2.jpg">
+    <link rel="icon" type="img/png." href="img/orang3.svg">
     <meta name="description"
         content="Разрабатываем сайты для бизнеса: от визитки до интернет-магазина. Продуманная структура, современный дизайн, удобство на телефонах. Стоимость и сроки фиксируем в договоре.">
     <title>Создание сайтов под ключ: визитки, лендинги, интернет-магазины | ВайбВеб</title>
@@ -16,7 +16,6 @@
 
 <body>
     <div class="container">
-
         <!-- Header второй страницы -->
         <header class="page2_head">
             <nav class="nav">
@@ -24,7 +23,8 @@
                 <ul class="nav_menu">
                     <li><a href="index.html">Главная</a></li>
                     <li><a class="now_page" href="page2.html">Создание сайтов</a></li>
-                    <li><a href="page3.html">Продвижение</a></li><li><a href="page4.html">Обслуживание</a></li>
+                    <li><a href="page3.html">Продвижение</a></li>
+                    <li><a href="page4.html">Обслуживание</a></li>
 
                 </ul>
             </nav>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="head_services">
-                <a class="head_services_text" href="#">Рассчитать стоимость</a>
+                <a class="head_services_text" href="#footer-page2">Рассчитать стоимость</a>
                 <div class="head_circle mini"></div>
             </div>
         </header>
@@ -143,17 +143,44 @@
             <p class="end_text">Расскажите о задаче, и мы предложим подходящий формат,<br><span>срок и стоимость. Первая
                     консультация бесплатная.</span> </p>
             <div class="head_services">
-                <a class="head_services_text" href="#">Обсудить проект</a>
+                <p id="openModal" class="head_services_text">Обсудить проект</p>
                 <div class="head_circle mini"></div>
             </div>
         </section>
     </div>
 
+    <!-- Модальное окно -->
+    <section id="modalOverlay" class="modal_window">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <div class="modal">
+            <div class="modal_contact">
+                <a class="modal_contact_tel" href="tel:+79271490597">Tel. 8(927)-149-05-97</a>
+            </div>
+            <div class="modal_form">
+                <h3 class="modal_form_title">Расскажите о проекте, а мы вернёмся с планом и расчётом</h3>
+                <p class="modal_form_text">Оставьте контакты и коротко опишите задачу. Мы свяжемся с вами в ближайшее
+                    время.
+                </p>
+                <form class="form" id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00" required
+                        inputmode="numeric">
+                    <textarea class="textarea" id="text" name="text"
+                        placeholder="Коротко о задаче (необязательно)"></textarea>
+                    <button type="submit" id="form_btn" class="form_btn">Отправить заявку</button>
+                    <p style="font-size: 18px; color: #ffffff;">Заполняя форму, вы соглашаетесь на обработку <br><span
+                            style="color: #FF5D2A;">персональных данных</span>
+                        (ст.9 ФЗ от 27.07.2006 №152- <br>
+                        ФЗ «О персональных данных»)</p>
+                </form>
 
+            </div>
+        </div>
 
+    </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="footer-page2" class="footer">
         <div class="footer_contact">
             <h3 class="footer_title">ВайбВеб. Создаём,<br> продвигаем, поддерживаем.</h3>
             <p>Сайты с настроением и результатом.</p>
@@ -188,8 +215,9 @@
             </form>
         </div>
 
-        </p>
     </footer>
+
+    <script src="modal.js"></script>
 </body>
 
 </html>

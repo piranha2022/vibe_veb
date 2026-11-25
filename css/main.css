@@ -36,6 +36,7 @@
   padding: 50px 50px 80px;
   background: #FFFFFF;
   position: relative;
+  cursor: pointer;
 }
 .head_subtitle,
 .about_subtitle,
@@ -58,6 +59,7 @@
   margin-top: 60px;
   font-size: 2rem;
   width: 60%;
+  cursor: pointer;
 }
 .head_img,
 .about_img,
@@ -419,6 +421,107 @@ details[open] .accordion-summary::after {
   line-height: 1.5;
 }
 
+.modal_window {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 53, 53, 0.5);
+  z-index: 1000;
+}
+.modal_window .close-btn {
+  color: #FF5D2A;
+  font-size: 100px;
+  margin: 50px;
+  cursor: pointer;
+}
+.modal_window .modal {
+  display: none;
+  /* Скрываем по умолчанию */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  width: 60%;
+  max-width: 1600px;
+  align-items: center;
+  padding: 50px 50px;
+  background: #141414;
+  text-align: center;
+}
+.modal_window .modal_form {
+  width: 100%;
+}
+.modal_window .modal_form_title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 0.9;
+  color: #FF5D2A;
+  margin-bottom: 5px;
+}
+.modal_window .modal_form_text {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.modal_window .modal .form {
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto 0;
+}
+.modal_window .modal .form input {
+  margin-bottom: 40px;
+  height: 54px;
+  padding: 10px;
+  outline: none;
+  font-size: 2rem;
+}
+.modal_window .modal .form .textarea {
+  min-height: 120px;
+  padding: 16px;
+  resize: none;
+  border-radius: 0;
+  color: #141414;
+  font-size: 1rem;
+}
+.modal_window .modal .form_btn {
+  padding: 20px;
+  border-radius: 8px;
+  background: #FF5D2A;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.8s;
+  margin: 30px auto 10px;
+}
+.modal_window .modal .form_btn:hover {
+  transform: scale(1.06);
+}
+.modal_window .modal_contact {
+  display: flex;
+  flex-direction: column;
+}
+.modal_window .modal_contact_tel {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FF5D2A;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.8s;
+}
+.modal_window .modal_contact_tel:hover {
+  transform: scale(1.06);
+}
+.modal_window.modal--opened {
+  display: block;
+}
+
 .page2_head {
   background: rgb(255, 223, 212);
   padding: 50px 80px;
@@ -471,6 +574,10 @@ details[open] .accordion-summary::after {
   top: 10px;
   left: -50px;
   border-radius: 50%;
+}
+
+.head_services {
+  cursor: pointer;
 }
 
 .events {

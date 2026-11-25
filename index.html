@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="img/png." href="img/orang2.jpg">
+    <link rel="icon" type="img/png." href="img/orang3.svg">
+
     <meta name="description"
         content="Веб-студия ВайбВеб: разрабатываем сайты, настраиваем продвижение и берём на себя техническую поддержку. Современный дизайн, понятные сроки, заявки от клиентов.">
     <title>ВайбВеб — создание, продвижение и поддержка сайтов под ключ</title>
@@ -32,7 +33,7 @@
             бизнесом, мы занимаемся
             сайтом.</p>
         <div class="head_services">
-            <a class="head_services_text" href="#" id="open-modal-btn">Обсудить проект</a>
+            <p id="openModal" class="head_services_text">Обсудить проект</p>
             <div class="head_circle mini"></div>
         </div>
         <img src="./img/rocket.png" alt="rocket" class="head_img">
@@ -314,7 +315,39 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <!-- Модальное окно -->
+    <section id="modalOverlay" class="modal_window">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <div class="modal">
+            <div class="modal_contact">
+                <a class="modal_contact_tel" href="tel:+79271490597">Tel. 8(927)-149-05-97</a>
+            </div>
+            <div class="modal_form">
+                <h3 class="modal_form_title">Расскажите о проекте, а мы вернёмся с планом и расчётом</h3>
+                <p class="modal_form_text">Оставьте контакты и коротко опишите задачу. Мы свяжемся с вами в ближайшее
+                    время.
+                </p>
+                <form class="form" id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 000-00-00" required
+                        inputmode="numeric">
+                    <textarea class="textarea" id="text" name="text"
+                        placeholder="Коротко о задаче (необязательно)"></textarea>
+                    <button type="submit" id="form_btn" class="form_btn">Отправить заявку</button>
+                    <p style="font-size: 18px; color: #ffffff;">Заполняя форму, вы соглашаетесь на обработку <br><span
+                            style="color: #FF5D2A;">персональных данных</span>
+                        (ст.9 ФЗ от 27.07.2006 №152- <br>
+                        ФЗ «О персональных данных»)</p>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="modal.js"></script>
+
+
 </body>
 
 </html>
